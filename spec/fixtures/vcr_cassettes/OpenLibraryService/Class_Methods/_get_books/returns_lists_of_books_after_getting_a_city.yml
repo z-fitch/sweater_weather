@@ -1,0 +1,622 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://openlibrary.org/search.json/q=denver,co&page=2&limit=5
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Server:
+      - nginx/1.18.0 (Ubuntu)
+      Date:
+      - Mon, 25 Sep 2023 15:39:12 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Ol-Stats:
+      - '"IB 1 0.001 MC 1 0.001 TT 0 0.003"'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        Cgo8IURPQ1RZUEUgaHRtbD4KPGh0bWwgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGh0bWwiIGxhbmc9IiI+CjxoZWFkPgogICAgPG1ldGEgaHR0cC1lcXVpdj0iQ29udGVudC1UeXBlIiBjb250ZW50PSJ0ZXh0L2h0bWw7IGNoYXJzZXQ9dXRmLTgiIC8+CiAgICA8bWV0YSBuYW1lPSJ0aXRsZSIgY29udGVudD0iIiAvPgogICAgPG1ldGEgbmFtZT0ia2V5d29yZHMiIGNvbnRlbnQ9ImZyZWUgYm9va3MsIGJvb2tzIHRvIHJlYWQsIGZyZWUgZWJvb2tzLCBhdWRpbyBib29rcywgcmVhZCBib29rcyBmb3IgZnJlZSwgcmVhZCBib29rcyBvbmxpbmUsIG9ubGluZSBsaWJyYXJ5Ij4KICAgIDxtZXRhIG5hbWU9InZpZXdwb3J0IiBjb250ZW50PSJ3aWR0aD1kZXZpY2Utd2lkdGgsIGluaXRpYWwtc2NhbGU9MS4wIj4KICAgIDxtZXRhIG5hbWU9ImF1dGhvciIgY29udGVudD0iT3BlbkxpYnJhcnkub3JnIiAvPgogICAgPG1ldGEgbmFtZT0iY3JlYXRvciIgY29udGVudD0iT3BlbkxpYnJhcnkub3JnIiAvPgogICAgPG1ldGEgbmFtZT0iY29weXJpZ2h0IiBjb250ZW50PSJPcmlnaW5hbCBjb250ZW50IGNvcHlyaWdodDsgMjAwNy0yMDE1IiAvPgogICAgPG1ldGEgbmFtZT0iZGlzdHJpYnV0aW9uIiBjb250ZW50PSJHbG9iYWwiIC8+CiAgICA8bWV0YSBuYW1lPSJ0aGVtZS1jb2xvciIgY29udGVudD0iI2UyZGNjNSI+CgoKICAgIDxsaW5rIHJlbD0iY2Fub25pY2FsIiBocmVmPSJodHRwczovL29wZW5saWJyYXJ5Lm9yZy9zZWFyY2guanNvbi9xPWRlbnZlcixjbyZhbXA7cGFnZT0yJmFtcDtsaW1pdD01IiAvPgogICAgPGxpbmsgcmVsPSJwcmVjb25uZWN0IiBocmVmPSJodHRwczovL2FuYWx5dGljcy5hcmNoaXZlLm9yZyI+CgogICAgPGxpbmsgcmVsPSJzZWFyY2giIHR5cGU9ImFwcGxpY2F0aW9uL29wZW5zZWFyY2hkZXNjcmlwdGlvbit4bWwiIHRpdGxlPSJPcGVuIExpYnJhcnkiIGhyZWY9Ii9zdGF0aWMvb3BlbnNlYXJjaC54bWwiPgogICAgPGxpbmsgcmVsPSJtYW5pZmVzdCIgaHJlZj0iL3N0YXRpYy9tYW5pZmVzdC5qc29uIj4KCiAgICA8bGluayBocmVmPSIvc3RhdGljL2ltYWdlcy9vcGVubGlicmFyeS0xMjh4MTI4LnBuZyIgcmVsPSJhcHBsZS10b3VjaC1pY29uIiAvPgogICAgPGxpbmsgaHJlZj0iL3N0YXRpYy9pbWFnZXMvb3BlbmxpYnJhcnktMTUyeDE1Mi5wbmciIHJlbD0iYXBwbGUtdG91Y2gtaWNvbiIgc2l6ZXM9IjE1MngxNTIiIC8+CiAgICA8bGluayBocmVmPSIvc3RhdGljL2ltYWdlcy9vcGVubGlicmFyeS0xNjd4MTY3LnBuZyIgcmVsPSJhcHBsZS10b3VjaC1pY29uIiBzaXplcz0iMTY3eDE2NyIgLz4KICAgIDxsaW5rIGhyZWY9Ii9zdGF0aWMvaW1hZ2VzL29wZW5saWJyYXJ5LTE4MHgxODAucG5nIiByZWw9ImFwcGxlLXRvdWNoLWljb24iIHNpemVzPSIxODB4MTgwIiAvPgogICAgPGxpbmsgaHJlZj0iL3N0YXRpYy9pbWFnZXMvb3BlbmxpYnJhcnktMTkyeDE5Mi5wbmciIHJlbD0iaWNvbiIgc2l6ZXM9IjE5MngxOTIiIC8+CiAgICA8bGluayBocmVmPSIvc3RhdGljL2ltYWdlcy9vcGVubGlicmFyeS0xMjh4MTI4LnBuZyIgcmVsPSJpY29uIiBzaXplcz0iMTI4eDEyOCIgLz4KICAgIDxsaW5rIGhyZWY9Ii9zdGF0aWMvYnVpbGQvcGFnZS11c2VyLmNzcz92PWNhOWFkNzM5YzQzZWI4MzVkYThkZjQ3YmIzNjI1MWEwIiByZWw9InN0eWxlc2hlZXQiIHR5cGU9InRleHQvY3NzIiAvPgoKICAgIDxub3NjcmlwdD4KICAgICAgPHN0eWxlPgogICAgICAgIC8qIERvbid0IGhpZGUgY29udGVudCB3aXRoIGNsYW1wIGlmIG5vIGpzIHRvIHNob3cgbW9yZS9sZXNzICovCiAgICAgICAgLmNsYW1wIHsKICAgICAgICAgIC13ZWJraXQtbGluZS1jbGFtcDogdW5zZXQgIWltcG9ydGFudDsKICAgICAgICB9CgogICAgICAgIC8qIEB3aWR0aC1icmVha3BvaW50LXRhYmxldCBtZWRpYSBxdWVyeTogKi8KICAgICAgICBAbWVkaWEgb25seSBzY3JlZW4gYW5kIChtaW4td2lkdGg6IDc2OHB4KSB7CiAgICAgICAgICAvKiBTdGlja3kgbmF2YmFyIHRvIHRvcCBvZiBzY3JlZW4gaWYgY29tcGFjdCB0aXRsZSBjYW5ub3QgYmUgc3RpY2tpZWQgKi8KICAgICAgICAgIC53b3JrLW1lbnUgewogICAgICAgICAgICB0b3A6IDAgIWltcG9ydGFudDsKICAgICAgICAgIH0KICAgICAgICB9CiAgICAgIDwvc3R5bGU+CiAgICA8L25vc2NyaXB0PgogPHNjcmlwdD4KCi8qIEBsaWNzdGFydCAgVGhlIGZvbGxvd2luZyBpcyB0aGUgZW50aXJlIGxpY2Vuc2Ugbm90aWNlIGZvciB0aGUKICogSmF2YVNjcmlwdCBjb2RlIGluIHRoaXMgcGFnZS4KICoKICogVGhpcyBwcm9ncmFtIGlzIGZyZWUgc29mdHdhcmU6IHlvdSBjYW4gcmVkaXN0cmlidXRlIGl0IGFuZC9vciBtb2RpZnkKICogaXQgdW5kZXIgdGhlIHRlcm1zIG9mIHRoZSBHTlUgQWZmZXJvIEdlbmVyYWwgUHVibGljIExpY2Vuc2UgYXMgcHVibGlzaGVkIGJ5CiAqIHRoZSBGcmVlIFNvZnR3YXJlIEZvdW5kYXRpb24sIGVpdGhlciB2ZXJzaW9uIDMgb2YgdGhlIExpY2Vuc2UsIG9yCiAqIChhdCB5b3VyIG9wdGlvbikgYW55IGxhdGVyIHZlcnNpb24uCiAqCiAqIFRoaXMgcHJvZ3JhbSBpcyBkaXN0cmlidXRlZCBpbiB0aGUgaG9wZSB0aGF0IGl0IHdpbGwgYmUgdXNlZnVsLAogKiBidXQgV0lUSE9VVCBBTlkgV0FSUkFOVFk7IHdpdGhvdXQgZXZlbiB0aGUgaW1wbGllZCB3YXJyYW50eSBvZgogKiBNRVJDSEFOVEFCSUxJVFkgb3IgRklUTkVTUyBGT1IgQSBQQVJUSUNVTEFSIFBVUlBPU0UuICBTZWUgdGhlCiAqIEdOVSBBZmZlcm8gR2VuZXJhbCBQdWJsaWMgTGljZW5zZSBmb3IgbW9yZSBkZXRhaWxzLgogKgogKiBZb3Ugc2hvdWxkIGhhdmUgcmVjZWl2ZWQgYSBjb3B5IG9mIHRoZSBHTlUgQWZmZXJvIEdlbmVyYWwgUHVibGljIExpY2Vuc2UKICogYWxvbmcgd2l0aCB0aGlzIHByb2dyYW0uICBJZiBub3QsIHNlZSA8aHR0cDovL3d3dy5nbnUub3JnL2xpY2Vuc2VzLz4uCiAqCiAqIEBsaWNlbmQgIFRoZSBhYm92ZSBpcyB0aGUgZW50aXJlIGxpY2Vuc2Ugbm90aWNlCiAqIGZvciB0aGUgSmF2YVNjcmlwdCBjb2RlIGluIHRoaXMgcGFnZS4KICovCgogIDwvc2NyaXB0PgoKICAgIDwhLS0gSmF2YVNjcmlwdCBleGVjdXRpb24gcXVldWUgdGhhdCB3aWxsIGJlIGVtcHRpZWQgYXQgdGhlIGJvdHRvbSBvZiB0aGUgcGFnZSAtLT4KICAgIDxzY3JpcHQgdHlwZT0idGV4dC9qYXZhc2NyaXB0Ij53aW5kb3cucSA9IFtdOzwvc2NyaXB0PgogICAgPG1ldGEgbmFtZT0iZ29vZ2xlLXNpdGUtdmVyaWZpY2F0aW9uIiBjb250ZW50PSJLcnFjWkQ0bDVCTE5WeWp6U2kyc2paQml3Z21rSjFXN242dzdUaEQ3QTc0IiAvPgogICAgPG1ldGEgbmFtZT0iZ29vZ2xlLXNpdGUtdmVyaWZpY2F0aW9uIiBjb250ZW50PSJ2dFhHbThxM1VnUC1mNnFYVHZRQm84NXVoM25tSVlJb3RWcXFkSkRweXo0IiAvPgogICAgPCEtLSBEcmluaSwgR29vZ2xlIFNlYXJjaCBDb25zb2xlIC0tPgogICAgPG1ldGEgbmFtZT0iZ29vZ2xlLXNpdGUtdmVyaWZpY2F0aW9uIiBjb250ZW50PSJYWU9KOVVqME1CcjZ3azdrajFJa3R0WHJxWS1iYlJzdEZNQURUZkV0MzU0IiAvPgoKCgoKCgoKICAgIDxtZXRhIG5hbWU9ImRlc2NyaXB0aW9uIiBjb250ZW50PSJPcGVuIExpYnJhcnkgaXMgYW4gb3BlbiwgZWRpdGFibGUgbGlicmFyeSBjYXRhbG9nLCBidWlsZGluZyB0b3dhcmRzIGEgd2ViIHBhZ2UgZm9yIGV2ZXJ5IGJvb2sgZXZlciBwdWJsaXNoZWQuIFJlYWQsIGJvcnJvdywgYW5kIGRpc2NvdmVyIG1vcmUgdGhhbiAzTSBib29rcyBmb3IgZnJlZS4iIC8+CiAgICAKICAgIDx0aXRsZT4vc2VhcmNoLmpzb24vcT1kZW52ZXIsY28mYW1wO3BhZ2U9MiZhbXA7bGltaXQ9NSBpcyBub3QgZm91bmQgfCBPcGVuIExpYnJhcnk8L3RpdGxlPgoKPC9oZWFkPgoKCgoKPGJvZHkgY2xhc3M9IiIgPgogIDxzY3JpcHQ+CiAgICAgIC8vIFByb3ZpZGUgYSBzaWduYWwgdGhhdCBKUyB3aWxsIGxvYWQKICAgICAgZG9jdW1lbnQuYm9keS5jbGFzc05hbWUgKz0gJyBjbGllbnQtanMnOwogIDwvc2NyaXB0PgogIDxzcGFuIGlkPSJ0b3AiPjwvc3Bhbj4KICA8ZGl2IGlkPSJvZmZsaW5lLWluZm8iPkl0IGxvb2tzIGxpa2UgeW91JiMzOTtyZSBvZmZsaW5lLjwvZGl2PgogIAogIAogIAogICAgPGRpdiBpZD0iZG9uYXRvIj48L2Rpdj4KICAgIDxzY3JpcHQgc3JjPSIvY2RuL2FyY2hpdmUub3JnL2RvbmF0ZS5qcyIgZGF0YS1wbGF0Zm9ybT0ib2wiPjwvc2NyaXB0PgogICAgCgo8ZGl2IGlkPSJ0b3BOb3RpY2UiPgogIDxkaXYgY2xhc3M9InBhZ2UtYmFubmVyIHBhZ2UtYmFubmVyLWJsYWNrIHBhZ2UtYmFubmVyLWNlbnRlciI+CiAgICA8ZGl2IGNsYXNzPSJpYUJhciI+CiAgICAgICAgPGEgY2xhc3M9ImlhTG9nbyIgaHJlZj0iaHR0cHM6Ly9hcmNoaXZlLm9yZyI+PGltZyBhbHQ9IkludGVybmV0IEFyY2hpdmUgbG9nbyIgc3JjPSIvc3RhdGljL2ltYWdlcy9pYS1sb2dvLnN2ZyIgd2lkdGg9IjE2MCI+PC9hPgogICAgICAgIDxhIGNsYXNzPSJnaG9zdC1idG4iIGhyZWY9Imh0dHBzOi8vYXJjaGl2ZS5vcmcvZG9uYXRlLz9wbGF0Zm9ybT1vbCZvcmlnaW49b2x3d3ctVG9wTmF2RG9uYXRlQnV0dG9uIiBkYXRhLW9sLWxpbmstdHJhY2s9IklBQmFyfERvbmF0ZUJ1dHRvbiI+RG9uYXRlIDxzcGFuIGNsYXNzPSJoZWFydCIgYXJpYS1oaWRkZW49InRydWUiPuKZpTwvc3Bhbj48L2E+CiAgICAgIDxkaXYgY2xhc3M9Imxhbmd1YWdlLWNvbXBvbmVudCBoZWFkZXItZHJvcGRvd24iPgogICAgICAgIDxkZXRhaWxzPgogICAgICAgICAgPHN1bW1hcnk+CiAgICAgICAgICAgIDxpbWcgY2xhc3M9InRyYW5zbGF0ZS1pY29uIiBzcmM9Ii9zdGF0aWMvaW1hZ2VzL2xhbmd1YWdlLWljb24uc3ZnIiB0aXRsZT0iQ2hhbmdlIFdlYnNpdGUgTGFuZ3VhZ2UiIGFsdD0iQ2hhbmdlIFdlYnNpdGUgTGFuZ3VhZ2UiLz4KICAgICAgICAgIDwvc3VtbWFyeT4KICAgICAgICAgIDxkaXYgY2xhc3M9Imxhbmd1YWdlLWRyb3Bkb3duLWNvbXBvbmVudCI+CiAgICAgICAgICAgIAo8dWwgY2xhc3M9ImxvY2FsZS1vcHRpb25zIGRyb3Bkb3duLW1lbnUiPgogIDxsaT48YSBocmVmPSIjIiBsYW5nPSJjcyIgZGF0YS1sYW5nLWlkPSJjcyIgdGl0bGU9IkN6ZWNoIj7EjGXFoXRpbmEgKGNzKTwvYT48L2xpPgogIDxsaT48YSBocmVmPSIjIiBsYW5nPSJkZSIgZGF0YS1sYW5nLWlkPSJkZSIgdGl0bGU9Ikdlcm1hbiI+RGV1dHNjaCAoZGUpPC9hPjwvbGk+CiAgPGxpPjxhIGhyZWY9IiMiIGxhbmc9ImVuIiBkYXRhLWxhbmctaWQ9ImVuIiB0aXRsZT0iRW5nbGlzaCI+RW5nbGlzaCAoZW4pPC9hPjwvbGk+CiAgPGxpPjxhIGhyZWY9IiMiIGxhbmc9ImVzIiBkYXRhLWxhbmctaWQ9ImVzIiB0aXRsZT0iU3BhbmlzaCI+RXNwYcOxb2wgKGVzKTwvYT48L2xpPgogIDxsaT48YSBocmVmPSIjIiBsYW5nPSJmciIgZGF0YS1sYW5nLWlkPSJmciIgdGl0bGU9IkZyZW5jaCI+RnJhbsOnYWlzIChmcik8L2E+PC9saT4KICA8bGk+PGEgaHJlZj0iIyIgbGFuZz0iaHIiIGRhdGEtbGFuZy1pZD0iaHIiIHRpdGxlPSJDcm9hdGlhbiI+SHJ2YXRza2kgKGhyKTwvYT48L2xpPgogIDxsaT48YSBocmVmPSIjIiBsYW5nPSJpdCIgZGF0YS1sYW5nLWlkPSJpdCIgdGl0bGU9Ikl0YWxpYW4iPkl0YWxpYW5vIChpdCk8L2E+PC9saT4KICA8bGk+PGEgaHJlZj0iIyIgbGFuZz0icHQiIGRhdGEtbGFuZy1pZD0icHQiIHRpdGxlPSJQb3J0dWd1ZXNlIj5Qb3J0dWd1w6pzIChwdCk8L2E+PC9saT4KICA8bGk+PGEgaHJlZj0iIyIgbGFuZz0idGUiIGRhdGEtbGFuZy1pZD0idGUiIHRpdGxlPSJUZWx1Z3UiPuCwpOCxhuCwsuCxgeCwl+CxgSAodGUpPC9hPjwvbGk+CiAgPGxpPjxhIGhyZWY9IiMiIGxhbmc9InVrIiBkYXRhLWxhbmctaWQ9InVrIiB0aXRsZT0iVWtyYWluaWFuIj7Qo9C60YDQsNGX0L3RgdGM0LrQsCAodWspPC9hPjwvbGk+CiAgPGxpPjxhIGhyZWY9IiMiIGxhbmc9InpoIiBkYXRhLWxhbmctaWQ9InpoIiB0aXRsZT0iQ2hpbmVzZSI+5Lit5paHICh6aCk8L2E+PC9saT4KPC91bD4KCiAgICAgICAgICA8L2Rpdj4KICAgICAgICA8L2RldGFpbHM+CiAgICAgIDwvZGl2PgogICAgPC9kaXY+CiAgPC9kaXY+CjwvZGl2PgoKICAKPGhlYWRlciBpZD0iaGVhZGVyLWJhciIgY2xhc3M9ImhlYWRlci1iYXIiPgoKCgogIDxkaXYgY2xhc3M9ImxvZ28tY29tcG9uZW50Ij4KICAgIDxhIGhyZWY9Ii8iIHRpdGxlPSJUaGUgSW50ZXJuZXQgQXJjaGl2ZSYjMzk7cyBPcGVuIExpYnJhcnk6IE9uZSBwYWdlIGZvciBldmVyeSBib29rIj4KICAgICAgPGRpdiBjbGFzcz0ibG9nby10eHQiPgogICAgICAgIDxpbWcgY2xhc3M9ImxvZ28taWNvbiIgc3JjPSIvc3RhdGljL2ltYWdlcy9vcGVubGlicmFyeS1sb2dvLXRpZ2h0ZXIuc3ZnIgogICAgICAgICAgd2lkdGg9IjE4OSIgaGVpZ2h0PSI0NyIKICAgICAgICAgIGFsdD0iT3BlbiBMaWJyYXJ5IGxvZ28iLz4KICAgICAgPC9kaXY+CiAgICA8L2E+CiAgPC9kaXY+CgoKICA8dWwgY2xhc3M9Im5hdmlnYXRpb24tY29tcG9uZW50Ij4KICAgIDxsaT4KCgoKCgoKCgoKCgoKPGRpdiBjbGFzcz0ibXlib29rcy1jb21wb25lbnQgaGVhZGVyLWRyb3Bkb3duIj4KICA8YSBocmVmPSIvYWNjb3VudC9ib29rcyIgZGF0YS1vbC1saW5rLXRyYWNrPU1haW5OYXZ8TXlCb29rcz5NeSBCb29rczwvYT4KPC9kaXY+CjwvbGk+CiAgICA8bGk+CgoKCgoKCgoKCgoKCjxkaXYgY2xhc3M9ImJyb3dzZS1jb21wb25lbnQgaGVhZGVyLWRyb3Bkb3duIj4KICA8ZGV0YWlscz4KICAgIDxzdW1tYXJ5ID4KICAgICAgQnJvd3NlCiAgICAgIDxzcGFuIGNsYXNzPSJzaGlmdCI+TWVudTwvc3Bhbj4KICAgICAgCiAgICAgIDxpbWcgY2xhc3M9ImRvd24tYXJyb3ciIGFyaWEtaGlkZGVuPSJ0cnVlIiBzcmM9Ii9zdGF0aWMvaW1hZ2VzL2Rvd24tYXJyb3cucG5nIiBhbHQ9IiIgcm9sZT0icHJlc2VudGF0aW9uIiB3aWR0aD0iNyIgaGVpZ2h0PSI0Ij4KICAgIDwvc3VtbWFyeT4KICAgIDxkaXYKICAgIGNsYXNzPSJicm93c2UtZHJvcGRvd24tY29tcG9uZW50IG5hdmlnYXRpb24tZHJvcGRvd24tY29tcG9uZW50IgogICAgPgogICAgICA8dWwgY2xhc3M9ImRyb3Bkb3duLW1lbnUgYnJvd3NlLWRyb3Bkb3duLW1lbnUiPgogICAgICAgIDxsaT4KICAgICAgICA8YSBocmVmPSIvc3ViamVjdHMiIGRhdGEtb2wtbGluay10cmFjaz1NYWluTmF2fFN1YmplY3RzPgogICAgICAgICAgU3ViamVjdHMKICAgICAgICA8L2E+CiAgICAgICAgPC9saT4KICAgICAgICA8bGk+CiAgICAgICAgPGEgaHJlZj0iL3RyZW5kaW5nIiBkYXRhLW9sLWxpbmstdHJhY2s9TWFpbk5hdnxUcmVuZGluZz4KICAgICAgICAgIFRyZW5kaW5nCiAgICAgICAgPC9hPgogICAgICAgIDwvbGk+CiAgICAgICAgPGxpPgogICAgICAgIDxhIGhyZWY9Ii9leHBsb3JlIiBkYXRhLW9sLWxpbmstdHJhY2s9TWFpbk5hdnxFeHBsb3JlPgogICAgICAgICAgTGlicmFyeSBFeHBsb3JlcgogICAgICAgIDwvYT4KICAgICAgICA8L2xpPgogICAgICAgIDxsaT4KICAgICAgICA8YSBocmVmPSIvbGlzdHMiIGRhdGEtb2wtbGluay10cmFjaz1NYWluTmF2fExpc3RzPgogICAgICAgICAgTGlzdHMKICAgICAgICA8L2E+CiAgICAgICAgPC9saT4KICAgICAgICA8bGk+CiAgICAgICAgPGEgaHJlZj0iL2NvbGxlY3Rpb25zIiBkYXRhLW9sLWxpbmstdHJhY2s9TWFpbk5hdnxDb2xsZWN0aW9ucz4KICAgICAgICAgIENvbGxlY3Rpb25zCiAgICAgICAgPC9hPgogICAgICAgIDwvbGk+CiAgICAgICAgPGxpPgogICAgICAgIDxhIGhyZWY9Ii9rLTEyIiBkYXRhLW9sLWxpbmstdHJhY2s9TWFpbk5hdnxLMTJMaWJyYXJ5PgogICAgICAgICAgSy0xMiBTdHVkZW50IExpYnJhcnkKICAgICAgICA8L2E+CiAgICAgICAgPC9saT4KICAgICAgICA8bGk+CiAgICAgICAgPGEgaHJlZj0iL2Jvb2t0YWxrcyIgZGF0YS1vbC1saW5rLXRyYWNrPU1haW5OYXZ8Qm9va1RhbGtzPgogICAgICAgICAgQm9vayBUYWxrcwogICAgICAgIDwvYT4KICAgICAgICA8L2xpPgogICAgICAgIDxsaT4KICAgICAgICA8YSBocmVmPSIvcmFuZG9tIiBkYXRhLW9sLWxpbmstdHJhY2s9TWFpbk5hdnxSYW5kb21Cb29rPgogICAgICAgICAgUmFuZG9tIEJvb2sKICAgICAgICA8L2E+CiAgICAgICAgPC9saT4KICAgICAgICA8bGk+CiAgICAgICAgPGEgaHJlZj0iL2FkdmFuY2Vkc2VhcmNoIiBkYXRhLW9sLWxpbmstdHJhY2s9TWFpbk5hdnxBZHZhbmNlZFNlYXJjaD4KICAgICAgICAgIEFkdmFuY2VkIFNlYXJjaAogICAgICAgIDwvYT4KICAgICAgICA8L2xpPgogICAgICA8L3VsPgogICAgPC9kaXY+CiAgPC9kZXRhaWxzPgo8L2Rpdj4KPC9saT4KICA8L3VsPgoKICA8ZGl2IGNsYXNzPSJzZWFyY2gtY29tcG9uZW50Ij4KICAgIDxkaXYgY2xhc3M9InNlYXJjaC1iYXItY29tcG9uZW50Ij4KICAgICAgPGRpdiBjbGFzcz0ic2VhcmNoLWJhciI+CiAgICAgICAgPGRpdiBjbGFzcz0ic2VhcmNoLWZhY2V0Ij4KICAgICAgICAgIDxsYWJlbCBjbGFzcz0ic2VhcmNoLWZhY2V0LXNlbGVjdG9yIj4KICAgICAgICAgICAgPHNwYW4gYXJpYS1oaWRkZW49InRydWUiIGNsYXNzPSJzZWFyY2gtZmFjZXQtdmFsdWUiPjwvc3Bhbj4KICAgICAgICAgICAgPHNlbGVjdCBhcmlhLWxhYmVsPSJTZWFyY2ggYnkiPgogICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9J2FsbCc+QWxsPC9vcHRpb24+CiAgICAgICAgICAgICAgPG9wdGlvbiB2YWx1ZT0ndGl0bGUnPlRpdGxlPC9vcHRpb24+CiAgICAgICAgICAgICAgPG9wdGlvbiB2YWx1ZT0nYXV0aG9yJz5BdXRob3I8L29wdGlvbj4KICAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPSd0ZXh0Jz5UZXh0PC9vcHRpb24+CiAgICAgICAgICAgICAgPG9wdGlvbiB2YWx1ZT0nc3ViamVjdCc+U3ViamVjdDwvb3B0aW9uPgogICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9J2xpc3RzJz5MaXN0czwvb3B0aW9uPgogICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9J2FkdmFuY2VkJz5BZHZhbmNlZDwvb3B0aW9uPgogICAgICAgICAgICA8L3NlbGVjdD4KICAgICAgICAgIDwvbGFiZWw+CiAgICAgICAgPC9kaXY+CiAgICAgICAgPGZvcm0gY2xhc3M9InNlYXJjaC1iYXItaW5wdXQiIGFjdGlvbj0iL3NlYXJjaCIgbWV0aG9kPSJnZXQiPgogICAgICAgICAgPGlucHV0IHR5cGU9InRleHQiIG5hbWU9InEiIHBsYWNlaG9sZGVyPSJTZWFyY2giIGFyaWEtbGFiZWw9IlNlYXJjaCIgYXV0b2NvbXBsZXRlPSJvZmYiPgogICAgICAgICAgPGlucHV0IG5hbWU9Im1vZGUiIHR5cGU9ImNoZWNrYm94IiBhcmlhLWhpZGRlbj0idHJ1ZSIgYXJpYS1sYWJlbD0iU2VhcmNoIGNoZWNrYm94IiBjaGVja2VkPSJjaGVja2VkIiB2YWx1ZT0iIiBpZD0iZnRva2Vuc3RvcCIgY2xhc3M9ImhpZGRlbiBpbnN0YW50c2VhcmNoLW1vZGUiPgogICAgICAgICAgPGlucHV0IHR5cGU9InN1Ym1pdCIgdmFsdWU9IiIgY2xhc3M9InNlYXJjaC1iYXItc3VibWl0IiBhcmlhLWxhYmVsPSJTZWFyY2ggc3VibWl0Ij4KICAgICAgICAgIDxkaXYgY2xhc3M9InZlcnRpY2FsLXNlcGFyYXRvciI+PC9kaXY+CiAgICAgICAgICA8YQogICAgICAgICAgICBpZD0iYmFyY29kZV9zY2FubmVyX2xpbmsiCiAgICAgICAgICAgIGNsYXNzPSJzZWFyY2gtYnktYmFyY29kZS1zdWJtaXQiCiAgICAgICAgICAgIGFyaWEtbGFiZWw9IlNlYXJjaCBieSBiYXJjb2RlIgogICAgICAgICAgICB0aXRsZT0iU2VhcmNoIGJ5IGJhcmNvZGUiCiAgICAgICAgICAgIGhyZWY9Ii9iYXJjb2Rlc2Nhbm5lcj9yZXR1cm5Ubz0vaXNibi8kJCQiCiAgICAgICAgICA+CiAgICAgICAgICA8L2E+CiAgICAgICAgPC9mb3JtPgogICAgICA8L2Rpdj4KICAgICAgPGRpdiBjbGFzcz0ic2VhcmNoLWRyb3Bkb3duIj4KICAgICAgICA8dWwgY2xhc3M9InNlYXJjaC1yZXN1bHRzIj4KICAgICAgICA8L3VsPgogICAgICA8L2Rpdj4KICAgIDwvZGl2PgogIDwvZGl2PgoKICA8dWwgY2xhc3M9ImF1dGgtY29tcG9uZW50Ij4KICAgIDxsaSBjbGFzcz0iaGlkZS1tZSI+CiAgICAgIDxhIGNsYXNzPSJidG4iCiAgICAgICAgIGhyZWY9Ii9hY2NvdW50L2xvZ2luIj5Mb2cgSW48L2E+PC9saT4KICAgIDxsaT48YSBjbGFzcz0iYnRuIHByaW1hcnkiIGhyZWY9Ii9hY2NvdW50L2NyZWF0ZSI+U2lnbiBVcDwvYT48L2xpPgogIDwvdWw+CiAgCiAgCgoKCgoKCgoKCgoKCjxkaXYgY2xhc3M9ImhhbWJ1cmdlci1jb21wb25lbnQgaGVhZGVyLWRyb3Bkb3duIj4KICA8ZGV0YWlscz4KICAgIDxzdW1tYXJ5IGRhdGEtb2wtbGluay10cmFjaz0iSGVhZGVyQmFyfEhhbWJ1cmdlciI+CiAgICAgIDxpbWcgY2xhc3M9ImhhbWJ1cmdlcl9faWNvbiIgc3JjPSIvc3RhdGljL2ltYWdlcy9oYW1idXJnZXItaWNvbi5zdmciIGFsdD0iYWRkaXRpb25hbCBvcHRpb25zIG1lbnUiLz4KICAgICAgPGltZyBjbGFzcz0iZG93bi1hcnJvdyIgYXJpYS1oaWRkZW49InRydWUiIHNyYz0iL3N0YXRpYy9pbWFnZXMvZG93bi1hcnJvdy5wbmciIGFsdD0iIiByb2xlPSJwcmVzZW50YXRpb24iIHdpZHRoPSI3IiBoZWlnaHQ9IjQiPgogICAgPC9zdW1tYXJ5PgogICAgPGRpdiBjbGFzcz0ibWFzay1tZW51Ij48L2Rpdj4KICAgIDxkaXYKICAgIGNsYXNzPSJhcHAtZHJhd2VyIgogICAgPgogICAgICA8dWwgY2xhc3M9ImRyb3Bkb3duLW1lbnUgaGFtYnVyZ2VyLWRyb3Bkb3duLW1lbnUiPgogICAgICAgIDxsaSBjbGFzcz0ic3Vic2VjdGlvbiI+CiAgICAgICAgICBNeSBPcGVuIExpYnJhcnkKICAgICAgICA8L2xpPgogICAgICAgIDxsaSBjbGFzcz0ibG9naW4tbGlua3MiPgogICAgICAgICAgPGEgY2xhc3M9ImxvZ2luLWxpbmtzX19zZWNvbmRhcnkiIGhyZWY9Ii9hY2NvdW50L2xvZ2luIj5Mb2cgSW48L2E+CiAgICAgICAgICA8YSBjbGFzcz0ibG9naW4tbGlua3NfX3ByaW1hcnkiIGhyZWY9Ii9hY2NvdW50L2NyZWF0ZSI+U2lnbiBVcDwvYT4KICAgICAgICA8L2xpPgogICAgICAgIDxsaSBjbGFzcz0ic3Vic2VjdGlvbiI+CiAgICAgICAgICBCcm93c2UKICAgICAgICA8L2xpPgogICAgICAgIDxsaT4KICAgICAgICA8YSBocmVmPSIvc3ViamVjdHMiIGRhdGEtb2wtbGluay10cmFjaz1IYW1idXJnZXJ8U3ViamVjdHM+CiAgICAgICAgICBTdWJqZWN0cwogICAgICAgIDwvYT4KICAgICAgICA8L2xpPgogICAgICAgIDxsaT4KICAgICAgICA8YSBocmVmPSIvdHJlbmRpbmciIGRhdGEtb2wtbGluay10cmFjaz1IYW1idXJnZXJ8VHJlbmRpbmc+CiAgICAgICAgICBUcmVuZGluZwogICAgICAgIDwvYT4KICAgICAgICA8L2xpPgogICAgICAgIDxsaT4KICAgICAgICA8YSBocmVmPSIvZXhwbG9yZSIgZGF0YS1vbC1saW5rLXRyYWNrPUhhbWJ1cmdlcnxFeHBsb3JlPgogICAgICAgICAgTGlicmFyeSBFeHBsb3JlcgogICAgICAgIDwvYT4KICAgICAgICA8L2xpPgogICAgICAgIDxsaT4KICAgICAgICA8YSBocmVmPSIvbGlzdHMiIGRhdGEtb2wtbGluay10cmFjaz1IYW1idXJnZXJ8TGlzdHM+CiAgICAgICAgICBMaXN0cwogICAgICAgIDwvYT4KICAgICAgICA8L2xpPgogICAgICAgIDxsaT4KICAgICAgICA8YSBocmVmPSIvY29sbGVjdGlvbnMiIGRhdGEtb2wtbGluay10cmFjaz1IYW1idXJnZXJ8Q29sbGVjdGlvbnM+CiAgICAgICAgICBDb2xsZWN0aW9ucwogICAgICAgIDwvYT4KICAgICAgICA8L2xpPgogICAgICAgIDxsaT4KICAgICAgICA8YSBocmVmPSIvay0xMiIgZGF0YS1vbC1saW5rLXRyYWNrPUhhbWJ1cmdlcnxLMTJMaWJyYXJ5PgogICAgICAgICAgSy0xMiBTdHVkZW50IExpYnJhcnkKICAgICAgICA8L2E+CiAgICAgICAgPC9saT4KICAgICAgICA8bGk+CiAgICAgICAgPGEgaHJlZj0iL2Jvb2t0YWxrcyIgZGF0YS1vbC1saW5rLXRyYWNrPUhhbWJ1cmdlcnxCb29rVGFsa3M+CiAgICAgICAgICBCb29rIFRhbGtzCiAgICAgICAgPC9hPgogICAgICAgIDwvbGk+CiAgICAgICAgPGxpPgogICAgICAgIDxhIGhyZWY9Ii9yYW5kb20iIGRhdGEtb2wtbGluay10cmFjaz1IYW1idXJnZXJ8UmFuZG9tQm9vaz4KICAgICAgICAgIFJhbmRvbSBCb29rCiAgICAgICAgPC9hPgogICAgICAgIDwvbGk+CiAgICAgICAgPGxpPgogICAgICAgIDxhIGhyZWY9Ii9hZHZhbmNlZHNlYXJjaCIgZGF0YS1vbC1saW5rLXRyYWNrPUhhbWJ1cmdlcnxBZHZhbmNlZFNlYXJjaD4KICAgICAgICAgIEFkdmFuY2VkIFNlYXJjaAogICAgICAgIDwvYT4KICAgICAgICA8L2xpPgogICAgICAgIDxsaSBjbGFzcz0ic3Vic2VjdGlvbiI+CiAgICAgICAgICBDb250cmlidXRlCiAgICAgICAgPC9saT4KICAgICAgICA8bGk+CiAgICAgICAgPGEgaHJlZj0iL2Jvb2tzL2FkZCIgZGF0YS1vbC1saW5rLXRyYWNrPUhhbWJ1cmdlcnxBZGRCb29rPgogICAgICAgICAgQWRkIGEgQm9vawogICAgICAgIDwvYT4KICAgICAgICA8L2xpPgogICAgICAgIDxsaT4KICAgICAgICA8YSBocmVmPSIvcmVjZW50Y2hhbmdlcyIgZGF0YS1vbC1saW5rLXRyYWNrPUhhbWJ1cmdlcnxSZWNlbnRFZGl0cz4KICAgICAgICAgIFJlY2VudCBDb21tdW5pdHkgRWRpdHMKICAgICAgICA8L2E+CiAgICAgICAgPC9saT4KICAgICAgICA8bGkgY2xhc3M9InN1YnNlY3Rpb24iPgogICAgICAgICAgUmVzb3VyY2VzCiAgICAgICAgPC9saT4KICAgICAgICA8bGk+CiAgICAgICAgPGEgaHJlZj0iL2hlbHAiIGRhdGEtb2wtbGluay10cmFjaz1IYW1idXJnZXJ8SGVscD4KICAgICAgICAgIEhlbHAgJmFtcDsgU3VwcG9ydAogICAgICAgIDwvYT4KICAgICAgICA8L2xpPgogICAgICAgIDxsaT4KICAgICAgICA8YSBocmVmPSIvZGV2ZWxvcGVycyIgZGF0YS1vbC1saW5rLXRyYWNrPUhhbWJ1cmdlcnxEZXZlbG9wZXJzSGVscD4KICAgICAgICAgIERldmVsb3BlciBDZW50ZXIKICAgICAgICA8L2E+CiAgICAgICAgPC9saT4KICAgICAgICA8bGk+CiAgICAgICAgPGEgaHJlZj0iL2xpYnJhcmlhbnMiIGRhdGEtb2wtbGluay10cmFjaz1IYW1idXJnZXJ8TGlicmFyaWFuc0hlbHA+CiAgICAgICAgICBMaWJyYXJpYW5zIFBvcnRhbAogICAgICAgIDwvYT4KICAgICAgICA8L2xpPgogICAgICA8L3VsPgogICAgPC9kaXY+CiAgPC9kZXRhaWxzPgo8L2Rpdj4KCgo8L2hlYWRlcj4KPGhlYWRlciBjbGFzcz0iaGVhZGVyLWJhciBtb2JpbGUiPgogIDx1bCBjbGFzcz0ibmF2aWdhdGlvbi1jb21wb25lbnQgbW9iaWxlIj4KICAgIDxsaT4KCgoKCgoKCgoKCgoKPGRpdiBjbGFzcz0ibXlib29rcy1jb21wb25lbnQgaGVhZGVyLWRyb3Bkb3duIj4KICA8YSBocmVmPSIvYWNjb3VudC9ib29rcyIgZGF0YS1vbC1saW5rLXRyYWNrPU1haW5OYXZ8TXlCb29rcz5NeSBCb29rczwvYT4KPC9kaXY+CjwvbGk+CiAgICA8bGk+CgoKCgoKCgoKCgoKCjxkaXYgY2xhc3M9ImJyb3dzZS1jb21wb25lbnQgaGVhZGVyLWRyb3Bkb3duIj4KICA8ZGV0YWlscz4KICAgIDxzdW1tYXJ5ID4KICAgICAgQnJvd3NlCiAgICAgIDxzcGFuIGNsYXNzPSJzaGlmdCI+TWVudTwvc3Bhbj4KICAgICAgCiAgICAgIDxpbWcgY2xhc3M9ImRvd24tYXJyb3ciIGFyaWEtaGlkZGVuPSJ0cnVlIiBzcmM9Ii9zdGF0aWMvaW1hZ2VzL2Rvd24tYXJyb3cucG5nIiBhbHQ9IiIgcm9sZT0icHJlc2VudGF0aW9uIiB3aWR0aD0iNyIgaGVpZ2h0PSI0Ij4KICAgIDwvc3VtbWFyeT4KICAgIDxkaXYKICAgIGNsYXNzPSJicm93c2UtZHJvcGRvd24tY29tcG9uZW50IG5hdmlnYXRpb24tZHJvcGRvd24tY29tcG9uZW50IgogICAgPgogICAgICA8dWwgY2xhc3M9ImRyb3Bkb3duLW1lbnUgYnJvd3NlLWRyb3Bkb3duLW1lbnUiPgogICAgICAgIDxsaT4KICAgICAgICA8YSBocmVmPSIvc3ViamVjdHMiIGRhdGEtb2wtbGluay10cmFjaz1NYWluTmF2fFN1YmplY3RzPgogICAgICAgICAgU3ViamVjdHMKICAgICAgICA8L2E+CiAgICAgICAgPC9saT4KICAgICAgICA8bGk+CiAgICAgICAgPGEgaHJlZj0iL3RyZW5kaW5nIiBkYXRhLW9sLWxpbmstdHJhY2s9TWFpbk5hdnxUcmVuZGluZz4KICAgICAgICAgIFRyZW5kaW5nCiAgICAgICAgPC9hPgogICAgICAgIDwvbGk+CiAgICAgICAgPGxpPgogICAgICAgIDxhIGhyZWY9Ii9leHBsb3JlIiBkYXRhLW9sLWxpbmstdHJhY2s9TWFpbk5hdnxFeHBsb3JlPgogICAgICAgICAgTGlicmFyeSBFeHBsb3JlcgogICAgICAgIDwvYT4KICAgICAgICA8L2xpPgogICAgICAgIDxsaT4KICAgICAgICA8YSBocmVmPSIvbGlzdHMiIGRhdGEtb2wtbGluay10cmFjaz1NYWluTmF2fExpc3RzPgogICAgICAgICAgTGlzdHMKICAgICAgICA8L2E+CiAgICAgICAgPC9saT4KICAgICAgICA8bGk+CiAgICAgICAgPGEgaHJlZj0iL2NvbGxlY3Rpb25zIiBkYXRhLW9sLWxpbmstdHJhY2s9TWFpbk5hdnxDb2xsZWN0aW9ucz4KICAgICAgICAgIENvbGxlY3Rpb25zCiAgICAgICAgPC9hPgogICAgICAgIDwvbGk+CiAgICAgICAgPGxpPgogICAgICAgIDxhIGhyZWY9Ii9rLTEyIiBkYXRhLW9sLWxpbmstdHJhY2s9TWFpbk5hdnxLMTJMaWJyYXJ5PgogICAgICAgICAgSy0xMiBTdHVkZW50IExpYnJhcnkKICAgICAgICA8L2E+CiAgICAgICAgPC9saT4KICAgICAgICA8bGk+CiAgICAgICAgPGEgaHJlZj0iL2Jvb2t0YWxrcyIgZGF0YS1vbC1saW5rLXRyYWNrPU1haW5OYXZ8Qm9va1RhbGtzPgogICAgICAgICAgQm9vayBUYWxrcwogICAgICAgIDwvYT4KICAgICAgICA8L2xpPgogICAgICAgIDxsaT4KICAgICAgICA8YSBocmVmPSIvcmFuZG9tIiBkYXRhLW9sLWxpbmstdHJhY2s9TWFpbk5hdnxSYW5kb21Cb29rPgogICAgICAgICAgUmFuZG9tIEJvb2sKICAgICAgICA8L2E+CiAgICAgICAgPC9saT4KICAgICAgICA8bGk+CiAgICAgICAgPGEgaHJlZj0iL2FkdmFuY2Vkc2VhcmNoIiBkYXRhLW9sLWxpbmstdHJhY2s9TWFpbk5hdnxBZHZhbmNlZFNlYXJjaD4KICAgICAgICAgIEFkdmFuY2VkIFNlYXJjaAogICAgICAgIDwvYT4KICAgICAgICA8L2xpPgogICAgICA8L3VsPgogICAgPC9kaXY+CiAgPC9kZXRhaWxzPgo8L2Rpdj4KPC9saT4KICA8L3VsPgo8L2hlYWRlcj4KCiAgCiAgPGRpdiBpZD0idGVzdC1ib2R5LW1vYmlsZSI+CiAgICAKICAgIDxkaXYgY2xhc3M9ImZsYXNoLW1lc3NhZ2VzIj4KICAgIDwvZGl2PgogICAgCiAgICAKICAgIAogICAgCgoKPGRpdiBpZD0iY29udGVudEhlYWQiPgogICAgPGgxPjQwNCAtIFBhZ2UgTm90IEZvdW5kPC9oMT4KPC9kaXY+Cgo8ZGl2IGlkPSJjb250ZW50Qm9keSI+CiAgICA8cD4vc2VhcmNoLmpzb24vcT1kZW52ZXIsY28mYW1wO3BhZ2U9MiZhbXA7bGltaXQ9NSBkb2VzIG5vdCBleGlzdC48L3A+CgogICAgCiAgICA8ZGl2PgogICAgPC9kaXY+CjwvZGl2PgoKICA8L2Rpdj4KCgoKCjwhLS1Gb3IgYW5hbHl0aWNzLS0+CjxkaXYgY2xhc3M9ImNsZWFyZml4Ij48L2Rpdj4KCgo8Zm9vdGVyPgogIDxkaXYgaWQ9ImZvb3Rlci1jb250ZW50IiA+CiAgICA8ZGl2IGlkPSJmb290ZXItbGlua3MiPgogICAgICA8ZGl2PgogICAgICAgIDxoMj5PcGVuIExpYnJhcnk8L2gyPgogICAgICAgIDx1bD4KICAgICAgICAgIDxsaT48YSBocmVmPSIvYWJvdXQvdmlzaW9uIj5WaXNpb248L2E+PC9saT4KICAgICAgICAgIDxsaT48YSBocmVmPSIvdm9sdW50ZWVyIj5Wb2x1bnRlZXI8L2E+PC9saT4KICAgICAgICAgIDxsaT48YSBocmVmPSIvcGFydG5lci13aXRoLXVzIj5QYXJ0bmVyIFdpdGggVXM8L2E+PC9saT4KICAgICAgICAgIDxsaT48YSBocmVmPSJodHRwczovL2FyY2hpdmUub3JnL2Fib3V0L2pvYnMucGhwIiB0aXRsZT0iSm9icyI+Q2FyZWVyczwvYT48L2xpPgogICAgICAgICAgPGxpPjxhIGhyZWY9Imh0dHBzOi8vYmxvZy5vcGVubGlicmFyeS5vcmcvIj5CbG9nPC9hPjwvbGk+CiAgICAgICAgICA8bGk+PGEgaHJlZj0iaHR0cHM6Ly9hcmNoaXZlLm9yZy9hYm91dC90ZXJtcy5waHAiPlRlcm1zIG9mIFNlcnZpY2U8L2E+PC9saT4KICAgICAgICAgIDxsaT48YSBocmVmPSJodHRwczovL2FyY2hpdmUub3JnL2RvbmF0ZS8/cGxhdGZvcm09b2wmb3JpZ2luPW9sd3d3LVRvcE5hdkRvbmF0ZUJ1dHRvbiI+RG9uYXRlPC9hPjwvbGk+CiAgICAgICAgPC91bD4KICAgICAgPC9kaXY+CiAgICAgIDxkaXY+CiAgICAgICAgPGgyPkRpc2NvdmVyPC9oMj4KICAgICAgICA8dWw+CiAgICAgICAgICA8bGk+PGEgaHJlZj0iLyIgdGl0bGU9IkdvIGhvbWUiPkhvbWU8L2E+PC9saT4KICAgICAgICAgIDxsaT48YSBocmVmPSIvc2VhcmNoIiB0aXRsZT0iRXhwbG9yZSBCb29rcyI+Qm9va3M8L2E+PC9saT4KICAgICAgICAgIDxsaT48YSBocmVmPSIvc2VhcmNoL2F1dGhvcnMiIHRpdGxlPSJFeHBsb3JlIGF1dGhvcnMiPkF1dGhvcnM8L2E+PC9saT4KICAgICAgICAgIDxsaT48YSBocmVmPSIvc3ViamVjdHMiIHRpdGxlPSJFeHBsb3JlIHN1YmplY3RzIj5TdWJqZWN0czwvYT48L2xpPgogICAgICAgICAgPGxpPjxhIGhyZWY9Ii9jb2xsZWN0aW9ucyIgdGl0bGU9IkV4cGxvcmUgY29sbGVjdGlvbnMiPkNvbGxlY3Rpb25zPC9hPjwvbGk+CiAgICAgICAgICA8bGk+PGEgaHJlZj0iL2FkdmFuY2Vkc2VhcmNoIj5BZHZhbmNlZCBTZWFyY2g8L2E+PC9saT4KICAgICAgICAgIDxsaT48YSBocmVmPSIjdG9wIiB0aXRsZT0iTmF2aWdhdGUgdG8gdG9wIG9mIHRoaXMgcGFnZSI+UmV0dXJuIHRvIFRvcDwvYT48L2xpPgogICAgICAgIDwvdWw+CiAgICAgIDwvZGl2PgogICAgICA8ZGl2PgogICAgICAgIDxoMj5EZXZlbG9wPC9oMj4KICAgICAgICA8dWw+CiAgICAgICAgICA8bGk+PGEgaHJlZj0iL2RldmVsb3BlcnMiIHRpdGxlPSJFeHBsb3JlIE9wZW4gTGlicmFyeSBEZXZlbG9wZXIgQ2VudGVyIj5EZXZlbG9wZXIgQ2VudGVyPC9hPjwvbGk+CiAgICAgICAgICA8bGk+PGEgaHJlZj0iL2RldmVsb3BlcnMvYXBpIiB0aXRsZT0iRXhwbG9yZSBPcGVuIExpYnJhcnkgQVBJcyI+QVBJIERvY3VtZW50YXRpb248L2E+PC9saT4KICAgICAgICAgIDxsaT48YSBocmVmPSIvZGV2ZWxvcGVycy9kdW1wcyIgdGl0bGU9IkJ1bGsgT3BlbiBMaWJyYXJ5IGRhdGEiPkJ1bGsgRGF0YSBEdW1wczwvYT48L2xpPgogICAgICAgICAgPGxpPjxhIGhyZWY9Imh0dHBzOi8vZ2l0aHViLmNvbS9pbnRlcm5ldGFyY2hpdmUvb3BlbmxpYnJhcnkvd2lraS9Xcml0aW5nLUJvdHMiIHRpdGxlPSJXcml0ZSBhIGJvdCI+V3JpdGluZyBCb3RzPC9hPjwvbGk+CiAgICAgICAgICA8bGk+PGEgaHJlZj0iL2Jvb2tzL2FkZCIgdGl0bGU9IkFkZCBhIG5ldyBib29rIHRvIE9wZW4gTGlicmFyeSI+QWRkIGEgQm9vazwvYT48L2xpPgogICAgICAgIDwvdWw+CiAgICAgIDwvZGl2PgogICAgICA8ZGl2PgogICAgICAgIDxoMj5IZWxwPC9oMj4KICAgICAgICA8dWw+CiAgICAgICAgICA8bGk+PGEgaHJlZj0iL2hlbHAiPkhlbHAgQ2VudGVyPC9hPjwvbGk+CiAgICAgICAgICA8bGk+PGEgaHJlZj0iL2NvbnRhY3Q/cGF0aD0lMkZzZWFyY2guanNvbiUyRnElM0RkZW52ZXIlMkNjbyUyNnBhZ2UlM0QyJTI2bGltaXQlM0Q1IiB0aXRsZT0iUHJvYmxlbXMiPlJlcG9ydCBBIFByb2JsZW08L2E+PC9saT4KICAgICAgICAgIDxsaT48YSBocmVmPSIvaGVscC9mYXEvZWRpdGluZyIgdGl0bGU9IlN1Z2dlc3QgRWRpdHMiPlN1Z2dlc3RpbmcgRWRpdHM8L2E+PC9saT4KICAgICAgICA8L3VsPgogICAgICAgIDxhc2lkZSBpZD0iZm9vdGVyLWljb25zIj4KICAgICAgICAgIDxhIGNsYXNzPSJmb290ZXItaWNvbnNfX3R3aXR0ZXIiIGhyZWY9Imh0dHBzOi8vdHdpdHRlci5jb20vT3BlbkxpYnJhcnkiPnR3aXR0ZXI8L2E+CiAgICAgICAgICA8YSBjbGFzcz0iZm9vdGVyLWljb25zX19naXRodWIiIGhyZWY9Imh0dHBzOi8vZ2l0aHViLmNvbS9pbnRlcm5ldGFyY2hpdmUvb3BlbmxpYnJhcnkiPmdpdGh1YjwvYT4KICAgICAgICA8L2FzaWRlPgogICAgICA8L2Rpdj4KICAgICAgPGRpdj4KICAgICAgICA8aDI+Q2hhbmdlIFdlYnNpdGUgTGFuZ3VhZ2U8L2gyPgogICAgICAgIAo8dWwgY2xhc3M9ImxvY2FsZS1vcHRpb25zICI+CiAgPGxpPjxhIGhyZWY9IiMiIGxhbmc9ImNzIiBkYXRhLWxhbmctaWQ9ImNzIiB0aXRsZT0iQ3plY2giPsSMZcWhdGluYSAoY3MpPC9hPjwvbGk+CiAgPGxpPjxhIGhyZWY9IiMiIGxhbmc9ImRlIiBkYXRhLWxhbmctaWQ9ImRlIiB0aXRsZT0iR2VybWFuIj5EZXV0c2NoIChkZSk8L2E+PC9saT4KICA8bGk+PGEgaHJlZj0iIyIgbGFuZz0iZW4iIGRhdGEtbGFuZy1pZD0iZW4iIHRpdGxlPSJFbmdsaXNoIj5FbmdsaXNoIChlbik8L2E+PC9saT4KICA8bGk+PGEgaHJlZj0iIyIgbGFuZz0iZXMiIGRhdGEtbGFuZy1pZD0iZXMiIHRpdGxlPSJTcGFuaXNoIj5Fc3Bhw7FvbCAoZXMpPC9hPjwvbGk+CiAgPGxpPjxhIGhyZWY9IiMiIGxhbmc9ImZyIiBkYXRhLWxhbmctaWQ9ImZyIiB0aXRsZT0iRnJlbmNoIj5GcmFuw6dhaXMgKGZyKTwvYT48L2xpPgogIDxsaT48YSBocmVmPSIjIiBsYW5nPSJociIgZGF0YS1sYW5nLWlkPSJociIgdGl0bGU9IkNyb2F0aWFuIj5IcnZhdHNraSAoaHIpPC9hPjwvbGk+CiAgPGxpPjxhIGhyZWY9IiMiIGxhbmc9Iml0IiBkYXRhLWxhbmctaWQ9Iml0IiB0aXRsZT0iSXRhbGlhbiI+SXRhbGlhbm8gKGl0KTwvYT48L2xpPgogIDxsaT48YSBocmVmPSIjIiBsYW5nPSJwdCIgZGF0YS1sYW5nLWlkPSJwdCIgdGl0bGU9IlBvcnR1Z3Vlc2UiPlBvcnR1Z3XDqnMgKHB0KTwvYT48L2xpPgogIDxsaT48YSBocmVmPSIjIiBsYW5nPSJ0ZSIgZGF0YS1sYW5nLWlkPSJ0ZSIgdGl0bGU9IlRlbHVndSI+4LCk4LGG4LCy4LGB4LCX4LGBICh0ZSk8L2E+PC9saT4KICA8bGk+PGEgaHJlZj0iIyIgbGFuZz0idWsiIGRhdGEtbGFuZy1pZD0idWsiIHRpdGxlPSJVa3JhaW5pYW4iPtCj0LrRgNCw0ZfQvdGB0YzQutCwICh1ayk8L2E+PC9saT4KICA8bGk+PGEgaHJlZj0iIyIgbGFuZz0iemgiIGRhdGEtbGFuZy1pZD0iemgiIHRpdGxlPSJDaGluZXNlIj7kuK3mlocgKHpoKTwvYT48L2xpPgo8L3VsPgoKICAgICAgPC9kaXY+CiAgICA8L2Rpdj4KICAgIDxocj4KICAgIDxkaXYgaWQ9ImZvb3Rlci1kZXRhaWxzIj4KICAgICAgPGltZyBpZD0iYXJjaGl2ZS1sb2dvIiBzcmM9Ii9zdGF0aWMvaW1hZ2VzL3BhbnRoZW9uLnBuZyIgYWx0PSJPcGVuIExpYnJhcnkgbG9nbyI+CiAgICAgIDxkaXYgaWQ9ImxlZ2FsLWRldGFpbHMiID4KICAgICAgICA8c3Bhbj5PcGVuIExpYnJhcnkgaXMgYW4gaW5pdGlhdGl2ZSBvZiB0aGUgPGEgaHJlZj0iLy9hcmNoaXZlLm9yZy8iPkludGVybmV0IEFyY2hpdmU8L2E+LCBhIDUwMShjKSgzKSBub24tcHJvZml0LCBidWlsZGluZyBhIGRpZ2l0YWwgbGlicmFyeSBvZiBJbnRlcm5ldCBzaXRlcyBhbmQgb3RoZXIgY3VsdHVyYWwgYXJ0aWZhY3RzIGluICBkaWdpdGFsIGZvcm0uIE90aGVyIDxhIGhyZWY9Ii8vYXJjaGl2ZS5vcmcvcHJvamVjdHMvIj5wcm9qZWN0czwvYT4gaW5jbHVkZSB0aGUgPGEgaHJlZj0iLy9hcmNoaXZlLm9yZy93ZWIvIj5XYXliYWNrIE1hY2hpbmU8L2E+LCA8YSBocmVmPSIvL2FyY2hpdmUub3JnLyI+YXJjaGl2ZS5vcmc8L2E+IGFuZCA8YSBocmVmPSIvL2FyY2hpdmUtaXQub3JnIj5hcmNoaXZlLWl0Lm9yZzwvYT48L3NwYW4+CiAgICAgIDwvZGl2PgogICAgICA8ZGl2IGlkPSJ2ZXJzaW9uLWRldGFpbHMiPgogICAgICAgIDxzcGFuIGNsYXNzPSJ2ZXJzaW9uIj52ZXJzaW9uIDxhIGhyZWY9Imh0dHBzOi8vZ2l0aHViLmNvbS9pbnRlcm5ldGFyY2hpdmUvb3BlbmxpYnJhcnkvY29tbWl0L2E0OTc1YWIiPmE0OTc1YWI8L2E+PC9zcGFuPgogICAgICA8L2Rpdj4KICAgIDwvZGl2PgogIDwvZGl2Pgo8L2Zvb3Rlcj4KCgo8IS0tV2lsbCBiZSBtb3ZlZCBpbnNpZGUgaW5kZXguanMtLT4KPHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiPgogIGlmICgic2VydmljZVdvcmtlciIgaW4gbmF2aWdhdG9yKSB7CiAgICB3aW5kb3cuYWRkRXZlbnRMaXN0ZW5lcignbG9hZCcsICgpID0+IHsKICAgICAgbmF2aWdhdG9yLnNlcnZpY2VXb3JrZXIucmVnaXN0ZXIoIi9zdy5qcyIpLnRoZW4ocmVnaXN0cmF0aW9uID0+IHsKCiAgICAgIH0pLmNhdGNoKGVycm9yID0+IHsKICAgICAgICBjb25zb2xlLmxvZygiU2VydmljZVdvcmtlciByZWdpc3RyYXRpb24gZmFpbGVkIik7CiAgICAgIH0pOwogICAgfSk7CiAgfQoKICB3aW5kb3cuYWRkRXZlbnRMaXN0ZW5lcignYmVmb3JlaW5zdGFsbHByb21wdCcsIChlKSA9PiB7CiAgICAvLyBQcmV2ZW50IHRoZSBtaW5pLWluZm9iYXIgZnJvbSBhcHBlYXJpbmcgb24gbW9iaWxlCiAgICBlLnByZXZlbnREZWZhdWx0KCk7CiAgfSk7Cjwvc2NyaXB0PgoKPCEtLSBNdXN0IGJlIGxvYWRlZCBhZnRlciBqcXVlcnkgLS0+CjxzY3JpcHQgc3JjPSIvY2RuL2FyY2hpdmUub3JnL2FuYWx5dGljcy5qcyIgdHlwZT0idGV4dC9qYXZhc2NyaXB0Ij48L3NjcmlwdD4KPHNjcmlwdCBzcmM9Ii9zdGF0aWMvYnVpbGQvYWxsLmpzP3Y9NDVhOWQ1Njc0ZTIzN2I2NDIzN2Q5YTcwOTJjYTIyZmIiIHR5cGU9InRleHQvamF2YXNjcmlwdCI+PC9zY3JpcHQ+CjwhLS0gUGFzc2VzIHRvdGFsX3RpbWUgZm9yIGFuYWx5dGljcyB0byBvbC5hbmFseXRpY3MuanMgLS0+CjxkaXYgY2xhc3M9ImFuYWx5dGljcy1zdGF0cy10aW1lLWNhbGN1bGF0b3IiIGRhdGEtdGltZT0iNS43MTE3OTM4OTk1MzYxMzMiPjwvZGl2PgoKPCEtLSBjbGVhciB0aGUgd2luZG93LnEgYW5kIHNldHVwIHRoZSBqUXVlcnkgcGx1Z2lucyAtLT4KPHNjcmlwdD4KJCggZnVuY3Rpb24gKCkgewogICAgdmFyIGk7CiAgICBmb3IgKCBpID0gMDsgaSA8IHdpbmRvdy5xLmxlbmd0aDsgaSsrICkgewogICAgICAgICQoIHdpbmRvdy5xW2ldICk7CiAgICB9CiAgICB3aW5kb3cucSA9IFtdOwp9ICk7CgppZiAodHlwZW9mIGFyY2hpdmVfYW5hbHl0aWNzICE9PSAndW5kZWZpbmVkJykgewogIGFyY2hpdmVfYW5hbHl0aWNzLnNldF91cF9ldmVudF90cmFja2luZygpOwp9Cjwvc2NyaXB0Pgo8L2JvZHk+CjwvaHRtbD4KCg==
+  recorded_at: Mon, 25 Sep 2023 15:39:12 GMT
+- request:
+    method: get
+    uri: https://openlibrary.org/search.json?limit=5&page=2&q=denver,co
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.18.0 (Ubuntu)
+      Date:
+      - Mon, 25 Sep 2023 15:40:51 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Method:
+      - GET, OPTIONS
+      Access-Control-Max-Age:
+      - '86400'
+      X-Ol-Stats:
+      - '"SR 1 0.034 TT 0 0.036"'
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+            "numFound": 772,
+            "start": 5,
+            "numFoundExact": true,
+            "docs": [
+                {
+                    "key": "/works/OL8808821W",
+                    "type": "work",
+                    "seed": [
+                        "/books/OL8537031M",
+                        "/works/OL8808821W",
+                        "/authors/OL3010394A"
+                    ],
+                    "title": "University of Denver Co 2007",
+                    "title_suggest": "University of Denver Co 2007",
+                    "title_sort": "University of Denver Co 2007",
+                    "edition_count": 1,
+                    "edition_key": [
+                        "OL8537031M"
+                    ],
+                    "publish_date": [
+                        "July 1, 2006"
+                    ],
+                    "publish_year": [
+                        2006
+                    ],
+                    "first_publish_year": 2006,
+                    "number_of_pages_median": 180,
+                    "oclc": [
+                        "150368610"
+                    ],
+                    "isbn": [
+                        "9781427401687",
+                        "1427401683"
+                    ],
+                    "last_modified_i": 1304171421,
+                    "ebook_count_i": 0,
+                    "ebook_access": "no_ebook",
+                    "has_fulltext": false,
+                    "public_scan_b": false,
+                    "cover_edition_key": "OL8537031M",
+                    "cover_i": 1847337,
+                    "publisher": [
+                        "College Prowler"
+                    ],
+                    "language": [
+                        "eng"
+                    ],
+                    "author_key": [
+                        "OL3010394A"
+                    ],
+                    "author_name": [
+                        "College Prowler"
+                    ],
+                    "id_goodreads": [
+                        "2985742"
+                    ],
+                    "publisher_facet": [
+                        "College Prowler"
+                    ],
+                    "_version_": 1767943535849373696,
+                    "author_facet": [
+                        "OL3010394A College Prowler"
+                    ]
+                },
+                {
+                    "key": "/works/OL16800110W",
+                    "type": "work",
+                    "seed": [
+                        "/books/OL25422192M",
+                        "/works/OL16800110W",
+                        "/subjects/hfb",
+                        "/subjects/hfbco",
+                        "/subjects/hfbcolo",
+                        "/subjects/colorado_marriage_records",
+                        "/subjects/co_marriage_records",
+                        "/subjects/colo_marriage_records",
+                        "/subjects/colorado_genealogy",
+                        "/subjects/co_genealogy",
+                        "/subjects/colo_genealogy",
+                        "/subjects/colorado_marriages",
+                        "/subjects/co_marriages",
+                        "/subjects/colo_marriages",
+                        "/subjects/colorado_vital_records",
+                        "/subjects/co_vital_records",
+                        "/subjects/colo_vital_records",
+                        "/subjects/colorado_vitals",
+                        "/subjects/co_vitals",
+                        "/subjects/colo_vitals",
+                        "/subjects/co_archives",
+                        "/subjects/western_heritage",
+                        "/subjects/colorado_ancestry",
+                        "/subjects/co_ancestry",
+                        "/subjects/colorado_archives",
+                        "/subjects/marriage_records_of_colorado",
+                        "/subjects/marriage_records_of_co",
+                        "/subjects/colorado_grooms",
+                        "/subjects/colorado_brides",
+                        "/subjects/co_grooms",
+                        "/subjects/co_brides",
+                        "/subjects/genealogy",
+                        "/subjects/colorado_marriage_licenses",
+                        "/subjects/co_marriage_licenses",
+                        "/subjects/colorado_marriage_sources",
+                        "/subjects/co_marriage_sources",
+                        "/subjects/colorado_marriage_bonds",
+                        "/subjects/co_marriage_bonds",
+                        "/subjects/place:hfbcodenv",
+                        "/subjects/place:denver_county_colorado",
+                        "/subjects/place:denver_county",
+                        "/subjects/place:denver",
+                        "/subjects/place:denver_co",
+                        "/subjects/place:co",
+                        "/subjects/place:denver_county_co",
+                        "/subjects/place:denver_co_co_marr",
+                        "/subjects/place:denver_marriages",
+                        "/subjects/place:denver_county_colo",
+                        "/subjects/place:denver_co_colo",
+                        "/subjects/place:denver_county_marriage_records",
+                        "/subjects/place:denver_co_marriage_records",
+                        "/subjects/place:denver_co_marriages",
+                        "/subjects/place:denver_co_vital_records",
+                        "/subjects/place:denver_co_vitals",
+                        "/subjects/place:denver_county_(colo.)",
+                        "/subjects/time:1873-1939",
+                        "/subjects/time:1700s",
+                        "/subjects/time:1800s",
+                        "/subjects/time:19th_century",
+                        "/subjects/time:pre_1900",
+                        "/subjects/time:early",
+                        "/subjects/time:pre_modern",
+                        "/subjects/time:early_nineteenth_century_and_early_twentieth_century",
+                        "/authors/OL7168194A",
+                        "/authors/OL7168201A"
+                    ],
+                    "title": "Denver County Colorado Marriage Index 1873-1939",
+                    "title_suggest": "Denver County Colorado Marriage Index 1873-1939",
+                    "title_sort": "Denver County Colorado Marriage Index 1873-1939",
+                    "edition_count": 1,
+                    "edition_key": [
+                        "OL25422192M"
+                    ],
+                    "publish_date": [
+                        "2013"
+                    ],
+                    "publish_year": [
+                        2013
+                    ],
+                    "first_publish_year": 2013,
+                    "number_of_pages_median": 27,
+                    "publish_place": [
+                        "3878 W 3200 S, Salt Lake City, UT 84120-2154 USA  ph.801-966-1611  huntingforbears@yahoo.com"
+                    ],
+                    "last_modified_i": 1513747688,
+                    "ebook_count_i": 0,
+                    "ebook_access": "no_ebook",
+                    "has_fulltext": false,
+                    "public_scan_b": false,
+                    "cover_edition_key": "OL25422192M",
+                    "cover_i": 7250387,
+                    "publisher": [
+                        "Hunting For Bears Genealogical Society and Library"
+                    ],
+                    "language": [
+                        "eng"
+                    ],
+                    "author_key": [
+                        "OL7168194A",
+                        "OL7168201A"
+                    ],
+                    "author_name": [
+                        "Patrick Vernon Murray",
+                        "Dixie Owens Murray"
+                    ],
+                    "place": [
+                        "hfbcodenv",
+                        "Denver County Colorado",
+                        "Denver County",
+                        "Denver",
+                        "Denver Co",
+                        "CO",
+                        "Denver County CO",
+                        "Denver Co CO Marr",
+                        "Denver Marriages",
+                        "Denver County Colo",
+                        "Denver Co Colo",
+                        "Denver County Marriage Records",
+                        "Denver Co Marriage Records",
+                        "Denver CO Marriages",
+                        "Denver CO vital records",
+                        "Denver CO vitals",
+                        "Denver County (Colo.)"
+                    ],
+                    "subject": [
+                        "hfb",
+                        "hfbco",
+                        "hfbcolo",
+                        "Colorado Marriage Records",
+                        "CO Marriage Records",
+                        "Colo Marriage Records",
+                        "Colorado Genealogy",
+                        "CO Genealogy",
+                        "Colo Genealogy",
+                        "Colorado Marriages",
+                        "CO Marriages",
+                        "Colo Marriages",
+                        "Colorado vital records",
+                        "CO vital records",
+                        "Colo vital records",
+                        "Colorado vitals",
+                        "CO vitals",
+                        "Colo vitals",
+                        "CO Archives",
+                        "Western Heritage",
+                        "Colorado Ancestry",
+                        "CO Ancestry",
+                        "Colorado Archives",
+                        "Marriage Records of Colorado",
+                        "Marriage Records of CO",
+                        "Colorado Grooms",
+                        "Colorado Brides",
+                        "CO Grooms",
+                        "CO Brides",
+                        "Genealogy",
+                        "Colorado Marriage licenses",
+                        "CO Marriage licenses",
+                        "Colorado Marriage Sources",
+                        "CO Marriage Sources",
+                        "Colorado Marriage bonds",
+                        "CO Marriage bonds"
+                    ],
+                    "time": [
+                        "1873-1939",
+                        "1700s",
+                        "1800s",
+                        "19th Century",
+                        "pre 1900",
+                        "Early",
+                        "pre modern",
+                        "Early Nineteenth Century and Early Twentieth Century"
+                    ],
+                    "publisher_facet": [
+                        "Hunting For Bears Genealogical Society and Library"
+                    ],
+                    "place_key": [
+                        "co",
+                        "denver",
+                        "denver_co",
+                        "denver_co_co_marr",
+                        "denver_co_colo",
+                        "denver_co_marriage_records",
+                        "denver_co_marriages",
+                        "denver_co_vital_records",
+                        "denver_co_vitals",
+                        "denver_county",
+                        "denver_county_(colo.)",
+                        "denver_county_co",
+                        "denver_county_colo",
+                        "denver_county_colorado",
+                        "denver_county_marriage_records",
+                        "denver_marriages",
+                        "hfbcodenv"
+                    ],
+                    "time_facet": [
+                        "1700s",
+                        "1800s",
+                        "1873-1939",
+                        "19th Century",
+                        "Early",
+                        "Early Nineteenth Century and Early Twentieth Century",
+                        "pre 1900",
+                        "pre modern"
+                    ],
+                    "subject_facet": [
+                        "CO Ancestry",
+                        "CO Archives",
+                        "CO Brides",
+                        "CO Genealogy",
+                        "CO Grooms",
+                        "CO Marriage Records",
+                        "CO Marriage Sources",
+                        "CO Marriage bonds",
+                        "CO Marriage licenses",
+                        "CO Marriages",
+                        "CO vital records",
+                        "CO vitals",
+                        "Colo Genealogy",
+                        "Colo Marriage Records",
+                        "Colo Marriages",
+                        "Colo vital records",
+                        "Colo vitals",
+                        "Colorado Ancestry",
+                        "Colorado Archives",
+                        "Colorado Brides",
+                        "Colorado Genealogy",
+                        "Colorado Grooms",
+                        "Colorado Marriage Records",
+                        "Colorado Marriage Sources",
+                        "Colorado Marriage bonds",
+                        "Colorado Marriage licenses",
+                        "Colorado Marriages",
+                        "Colorado vital records",
+                        "Colorado vitals",
+                        "Genealogy",
+                        "Marriage Records of CO",
+                        "Marriage Records of Colorado",
+                        "Western Heritage",
+                        "hfb",
+                        "hfbco",
+                        "hfbcolo"
+                    ],
+                    "_version_": 1767901532767911936,
+                    "place_facet": [
+                        "CO",
+                        "Denver",
+                        "Denver CO Marriages",
+                        "Denver CO vital records",
+                        "Denver CO vitals",
+                        "Denver Co",
+                        "Denver Co CO Marr",
+                        "Denver Co Colo",
+                        "Denver Co Marriage Records",
+                        "Denver County",
+                        "Denver County (Colo.)",
+                        "Denver County CO",
+                        "Denver County Colo",
+                        "Denver County Colorado",
+                        "Denver County Marriage Records",
+                        "Denver Marriages",
+                        "hfbcodenv"
+                    ],
+                    "author_facet": [
+                        "OL7168194A Patrick Vernon Murray",
+                        "OL7168201A Dixie Owens Murray"
+                    ],
+                    "subject_key": [
+                        "co_ancestry",
+                        "co_archives",
+                        "co_brides",
+                        "co_genealogy",
+                        "co_grooms",
+                        "co_marriage_bonds",
+                        "co_marriage_licenses",
+                        "co_marriage_records",
+                        "co_marriage_sources",
+                        "co_marriages",
+                        "co_vital_records",
+                        "co_vitals",
+                        "colo_genealogy",
+                        "colo_marriage_records",
+                        "colo_marriages",
+                        "colo_vital_records",
+                        "colo_vitals",
+                        "colorado_ancestry",
+                        "colorado_archives",
+                        "colorado_brides",
+                        "colorado_genealogy",
+                        "colorado_grooms",
+                        "colorado_marriage_bonds",
+                        "colorado_marriage_licenses",
+                        "colorado_marriage_records",
+                        "colorado_marriage_sources",
+                        "colorado_marriages",
+                        "colorado_vital_records",
+                        "colorado_vitals",
+                        "genealogy",
+                        "hfb",
+                        "hfbco",
+                        "hfbcolo",
+                        "marriage_records_of_co",
+                        "marriage_records_of_colorado",
+                        "western_heritage"
+                    ],
+                    "time_key": [
+                        "1700s",
+                        "1800s",
+                        "1873-1939",
+                        "19th_century",
+                        "early",
+                        "early_nineteenth_century_and_early_twentieth_century",
+                        "pre_1900",
+                        "pre_modern"
+                    ]
+                },
+                {
+                    "key": "/works/OL4437737W",
+                    "type": "work",
+                    "seed": [
+                        "/books/OL10910520M",
+                        "/works/OL4437737W",
+                        "/authors/OL882946A"
+                    ],
+                    "title": "Denver DLX Flip Map Co267",
+                    "title_suggest": "Denver DLX Flip Map Co267",
+                    "title_sort": "Denver DLX Flip Map Co267",
+                    "edition_count": 1,
+                    "edition_key": [
+                        "OL10910520M"
+                    ],
+                    "publish_date": [
+                        "January 2003"
+                    ],
+                    "publish_year": [
+                        2003
+                    ],
+                    "first_publish_year": 2003,
+                    "number_of_pages_median": 1,
+                    "oclc": [
+                        "67517781"
+                    ],
+                    "isbn": [
+                        "9780762531639",
+                        "0762531630"
+                    ],
+                    "last_modified_i": 1338943603,
+                    "ebook_count_i": 0,
+                    "ebook_access": "no_ebook",
+                    "has_fulltext": false,
+                    "public_scan_b": false,
+                    "publisher": [
+                        "Universal Map Enterprises"
+                    ],
+                    "language": [
+                        "eng"
+                    ],
+                    "author_key": [
+                        "OL882946A"
+                    ],
+                    "author_name": [
+                        "Laura Ryder"
+                    ],
+                    "publisher_facet": [
+                        "Universal Map Enterprises"
+                    ],
+                    "_version_": 1767935634562875392,
+                    "author_facet": [
+                        "OL882946A Laura Ryder"
+                    ]
+                },
+                {
+                    "key": "/works/OL10910782M",
+                    "type": "work",
+                    "seed": [
+                        "/books/OL10910782M",
+                        "/works/OL10910782M"
+                    ],
+                    "title": "Denver, Co Vicinity (City Wall Maps)",
+                    "title_suggest": "Denver, Co Vicinity (City Wall Maps)",
+                    "title_sort": "Denver, Co Vicinity (City Wall Maps)",
+                    "edition_count": 1,
+                    "edition_key": [
+                        "OL10910782M"
+                    ],
+                    "publish_date": [
+                        "January 2001"
+                    ],
+                    "publish_year": [
+                        2001
+                    ],
+                    "first_publish_year": 2001,
+                    "isbn": [
+                        "0762538627",
+                        "9780762538621"
+                    ],
+                    "last_modified_i": 1686044194,
+                    "ebook_count_i": 0,
+                    "ebook_access": "no_ebook",
+                    "has_fulltext": false,
+                    "public_scan_b": false,
+                    "publisher": [
+                        "Universal Map Enterprises"
+                    ],
+                    "language": [
+                        "eng"
+                    ],
+                    "publisher_facet": [
+                        "Universal Map Enterprises"
+                    ],
+                    "_version_": 1767945477546835968
+                },
+                {
+                    "key": "/works/OL8541064W",
+                    "type": "work",
+                    "seed": [
+                        "/books/OL9197762M",
+                        "/works/OL8541064W",
+                        "/authors/OL2859862A"
+                    ],
+                    "title": "Insight Fleximap Denver, CO (Insight Fleximaps)",
+                    "title_suggest": "Insight Fleximap Denver, CO (Insight Fleximaps)",
+                    "title_sort": "Insight Fleximap Denver, CO (Insight Fleximaps)",
+                    "edition_count": 1,
+                    "edition_key": [
+                        "OL9197762M"
+                    ],
+                    "publish_date": [
+                        "January 30, 2006"
+                    ],
+                    "publish_year": [
+                        2006
+                    ],
+                    "first_publish_year": 2006,
+                    "number_of_pages_median": 1,
+                    "oclc": [
+                        "64038908"
+                    ],
+                    "isbn": [
+                        "9789812582621",
+                        "9812582622"
+                    ],
+                    "last_modified_i": 1670155218,
+                    "ebook_count_i": 0,
+                    "ebook_access": "no_ebook",
+                    "has_fulltext": false,
+                    "public_scan_b": false,
+                    "cover_edition_key": "OL9197762M",
+                    "cover_i": 2302739,
+                    "publisher": [
+                        "American Map Corporation"
+                    ],
+                    "language": [
+                        "eng"
+                    ],
+                    "author_key": [
+                        "OL2859862A"
+                    ],
+                    "author_name": [
+                        "American Map Corp"
+                    ],
+                    "publisher_facet": [
+                        "American Map Corporation"
+                    ],
+                    "_version_": 1767943005266771969,
+                    "author_facet": [
+                        "OL2859862A American Map Corp"
+                    ]
+                }
+            ],
+            "num_found": 772,
+            "q": "denver,co",
+            "offset": null
+        }
+  recorded_at: Mon, 25 Sep 2023 15:40:52 GMT
+recorded_with: VCR 6.2.0
