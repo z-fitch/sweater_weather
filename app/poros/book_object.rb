@@ -1,4 +1,4 @@
-class Book
+class BookObject
   attr_reader :isbn, :title
 
   def initialize(data)

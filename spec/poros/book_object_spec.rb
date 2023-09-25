@@ -7,9 +7,9 @@ RSpec.describe Book do
       title: 'Spot'
     }
 
-    book = Book.new(attributes)
+    book = BookObject.new(attributes)
   
-    expect(book).to be_a(Book)
+    expect(book).to be_a(BookObject)
     expect(book.isbn).to eq(['0762507845'])
     expect(book.title).to eq('Spot')
   end
