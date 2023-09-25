@@ -9,7 +9,7 @@ class BookSerializer
           "destination": location,
           "forecast": {
             "summary": current.condition,
-            "temperature": current.temperature
+            "temperature": "#{current.temperature} F"
           },
           "total_books_found": book_count,
           "books": books.map do |book|
