@@ -13,5 +13,3 @@ class OpenLibraryService
     Faraday.new(url: "https://openlibrary.org/") 
   end
 end
-
-# https://openlibrary.org/search.json?q=denver,co&page=2&limit=5
