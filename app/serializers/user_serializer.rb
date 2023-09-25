@@ -4,6 +4,6 @@ class UserSerializer
   attributes :email, :api_key
 
   attribute :api_key do 
-    SecureRandom.hex
+    SecureRandom.hex(25)
   end
 end
