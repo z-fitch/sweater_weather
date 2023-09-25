@@ -32,6 +32,12 @@ RSpec.describe 'Index', type: :request do
 
         expect(response_data[:data][:attributes]).to have_key(:books)
         expect(response_data[:data][:attributes][:books]).to be_a(Array)
+
+        expect(response_data[:data][:attributes][:books].first).to have_key(:isbn)
+        expect(response_data[:data][:attributes][:books].first[:isbn]).to be_a(Array)
+
+        expect(response_data[:data][:attributes][:books].first).to have_key(:title)
+        expect(response_data[:data][:attributes][:books].first[:title]).to be_a(String)
       end
     end
 
