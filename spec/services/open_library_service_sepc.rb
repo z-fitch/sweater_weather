@@ -12,8 +12,11 @@ RSpec.describe OpenLibraryService do
         expect(books).to be_a(Hash)
         expect(books[:docs]).to be_an(Array)
 
-        expect(books[:docs]).to be_a(Hash)
         expect(books[:docs]).to be_an(Array)
+
+        expect(books).to have_key(:num_found)
+        expect(books[:docs].first).to have_key(:title)
+        expect(books[:docs].first).to have_key(:isbn)
       end
     end    
   end
