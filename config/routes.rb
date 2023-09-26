@@ -7,6 +7,7 @@ Rails.application.routes.draw do
     namespace :v0 do
       resources :forecasts, only: [:index]
       resources :users, only: [:create]
+      resources :sessions, only: [:create]
     end
   end
 
