@@ -3,13 +3,15 @@ class Api::V0::UsersController < ApplicationController
 
   def create
     begin
-      # require 'pry'; binding.pry
-      render json: UserSerializer.new(User.create!(user_params)), status: 201
-    rescue ActiveRecord::RecordInvalid => error
-      render json: ErrorSerializer.new(error).format_errors, status: :bad_request
+      if User.user_params_valid?(params)
+        render json: UserSerializer.new(User.create!(user_params)), status: 201
+      end
+    rescue ActiveRecord::RecordInvalid => e
+      render json: ErrorSerializer.format_errors(e.message), status: 409
+    rescue ActiveRecord::StatementInvalid => e
+      render json: ErrorSerializer.format_errors(e.message), status: 404
     end
   end
-
 
   private
 
