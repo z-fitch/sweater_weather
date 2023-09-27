@@ -14,12 +14,11 @@ class User < ApplicationRecord
   end
 
   def self.correct_info?(user_params)
-    @user = User.find_by(email: user_params[:email])
-    if @user && @user.authenticate(user_params[:password])
+    user = User.find_by(email: user_params[:email])
+    if user && user.authenticate(user_params[:password])
       true
     else
       raise ActiveRecord::StatementInvalid, "Email or Password is Invaild"
     end
   end
-
 end

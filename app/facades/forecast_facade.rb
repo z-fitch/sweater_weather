@@ -1,6 +1,5 @@
 class ForecastFacade
 
-
   def self.current_weather_forecast(location)
     json = WeatherService.get_forecast(location)
     Current.new(json[:current])
@@ -23,10 +22,11 @@ class ForecastFacade
     day.first
   end
 
-  # private
-
-  # def weather_data(location)
-  #   @_weather_data ||= WeatherService.get_forecast(location)
-  # end
-  
+  def self.specific_hour(location, hour)
+    json = WeatherService.get_one_forecast(location, hour)
+    day = json[:forecast][:forecastday].map do |data|
+      Hourly.new(data[:hour].first)
+    end
+    day.first
+  end
 end

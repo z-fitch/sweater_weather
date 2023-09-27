@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe WeatherService do
   describe 'Class Methods' do
-    context '.location_format', :vcr do
+    context '.get_forecast', :vcr do
       it 'returns weather information after getting lat and lon' do
         attributes = {
           lat: '39.746',
@@ -16,7 +16,7 @@ RSpec.describe WeatherService do
         expect(weather[:current]).to be_an(Hash)
       end
 
-      it 'has the needed location Data' do
+      it 'has the needed weather Data' do
         attributes = {
           lat: '39.746',
           lng: '-104.99373'
@@ -42,6 +42,49 @@ RSpec.describe WeatherService do
 
         expect(weather[:forecast][:forecastday].first).to have_key(:hour)
         expect(weather[:forecast][:forecastday].first[:hour]).to be_a(Array)
+      end
+    end    
+
+    context '.get_one_forecast', :vcr do
+      it 'returns weather information after location and an hour' do
+        attributes = {
+          lat: '39.746',
+          lng: '-104.99373'
+        }
+    
+        location = Location.new(attributes)
+        arrival_weather = WeatherService.get_one_forecast(location, 16)
+
+        expect(arrival_weather).to be_a(Hash)
+        expect(arrival_weather[:forecast]).to be_a(Hash)
+        expect(arrival_weather[:forecast][:forecastday]).to be_an(Array)
+        expect(arrival_weather[:forecast][:forecastday].first[:hour]).to be_an(Array)
+      end
+
+      it 'has the needed Hour Data' do
+        attributes = {
+          lat: '39.746',
+          lng: '-104.99373'
+        }
+    
+        location = Location.new(attributes)
+        arrival_weather = WeatherService.get_one_forecast(location, 16)
+        hour_data = arrival_weather[:forecast][:forecastday].first[:hour]
+
+        expect(hour_data).to be_a(Array)
+        expect(hour_data.count).to eq(1)
+
+        expect(hour_data.first).to have_key(:time)
+        expect(hour_data.first[:time]).to be_a(String)
+
+        expect(hour_data.first).to have_key(:temp_f)
+        expect(hour_data.first[:temp_f]).to be_a(Float)
+
+        expect(hour_data.first).to have_key(:condition)
+        expect(hour_data.first[:condition]).to be_a(Hash)
+
+        expect(hour_data.first[:condition]).to have_key(:text)
+        expect(hour_data.first[:condition][:text]).to be_a(String)
       end
     end    
   end
