@@ -15,8 +15,16 @@ RSpec.describe User, type: :model do
           password: 'password',
           password_confirmation: 'password'
         }
-
+        expect { Forecast.location_present("") }.to raise_error( ActiveRecord::StatementInvalid)
         expect(User.user_params_valid?(user_params)).to eq(true)
+      end
+
+      it 'checks if passwords are the same' do 
+        user_params = {
+          password: 'password',
+          password_confirmation: 'password123'
+        }
+        expect { User.user_params_valid?(user_params) }.to raise_error( ActiveRecord::StatementInvalid)
       end
     end
 
@@ -37,6 +45,42 @@ RSpec.describe User, type: :model do
         }
 
         expect(User.correct_info?(user_params)).to eq(true)
+      end
+
+      it 'checks if email exists and password is correct' do 
+
+        create_account = { 
+          email: 'email@gmail.com',
+          password: 'password',
+          password_confirmation: 'password'
+        }
+
+        User.create!(create_account)
+
+        user_params = {
+          email: 'wrongemail@gmail.com',
+          password: 'password',
+        }
+        expect { User.correct_info?(user_params) }.to raise_error( ActiveRecord::StatementInvalid)
+
+      end
+
+      it 'checks if email exists and password is correct' do 
+
+        create_account = { 
+          email: 'email@gmail.com',
+          password: 'password',
+          password_confirmation: 'password'
+        }
+
+        User.create!(create_account)
+
+        user_params = {
+          email: 'email@gmail.com',
+          password: 'wrongpassword',
+        }
+        expect { User.correct_info?(user_params) }.to raise_error( ActiveRecord::StatementInvalid)
+
       end
     end
   end
