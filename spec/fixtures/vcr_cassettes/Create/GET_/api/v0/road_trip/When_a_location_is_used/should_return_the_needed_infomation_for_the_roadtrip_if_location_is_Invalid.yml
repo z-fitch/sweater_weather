@@ -1,0 +1,180 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.mapquestapi.com/directions/v2/route?from=Cincinatti,OH&to=London,%20UK
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Key:
+      - cayPcFS14a4Q04vfMbMj1bKIRFMRHYvm
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 27 Sep 2023 04:03:57 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '278'
+      Connection:
+      - keep-alive
+      X-Ratelimit-Limit-2628000:
+      - '15000'
+      X-Ratelimit-Remaining-2628000:
+      - '14878'
+      Ratelimit-Limit:
+      - '15000'
+      Ratelimit-Remaining:
+      - '14878'
+      Ratelimit-Reset:
+      - '1900563'
+      X-Powered-By:
+      - MapQuest
+      X-Request-Id:
+      - e1735a00-5cea-11ee-ab9e-a105447bb6a9
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Transaction-Count:
+      - all=3,geocoding=2,directions=1
+      Etag:
+      - W/"116-iBjgnQxNGqjY6sVCYaem2XJ/c3Q"
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJyb3V0ZSI6eyJyb3V0ZUVycm9yIjp7ImVycm9yQ29kZSI6MiwibWVzc2FnZSI6IiJ9fSwiaW5mbyI6eyJzdGF0dXNjb2RlIjo0MDIsImNvcHlyaWdodCI6eyJ0ZXh0IjoiwqkgMjAyMyBNYXBRdWVzdCwgSW5jLiIsImltYWdlVXJsIjoiaHR0cDovL2FwaS5tcWNkbi5jb20vcmVzL21xbG9nby5naWYiLCJpbWFnZUFsdFRleHQiOiLCqSAyMDIzIE1hcFF1ZXN0LCBJbmMuIn0sIm1lc3NhZ2VzIjpbIldlIGFyZSB1bmFibGUgdG8gcm91dGUgd2l0aCB0aGUgZ2l2ZW4gbG9jYXRpb25zLiJdfX0=
+  recorded_at: Wed, 27 Sep 2023 04:03:56 GMT
+- request:
+    method: get
+    uri: https://www.mapquestapi.com/geocoding/v1/address?location=London,%20UK
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Key:
+      - cayPcFS14a4Q04vfMbMj1bKIRFMRHYvm
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 27 Sep 2023 04:03:57 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '795'
+      Connection:
+      - keep-alive
+      X-Ratelimit-Limit-2628000:
+      - '15000'
+      X-Ratelimit-Remaining-2628000:
+      - '14880'
+      Ratelimit-Limit:
+      - '15000'
+      Ratelimit-Remaining:
+      - '14880'
+      Ratelimit-Reset:
+      - '1900563'
+      X-Powered-By:
+      - MapQuest
+      X-Request-Id:
+      - e1ae8e40-5cea-11ee-b3f1-fd71b5ede717
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"31b-adCj+ODbZmHmUw5W3tWzuOsCpXc"
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJpbmZvIjp7InN0YXR1c2NvZGUiOjAsImNvcHlyaWdodCI6eyJ0ZXh0IjoiwqkgMjAyMyBNYXBRdWVzdCwgSW5jLiIsImltYWdlVXJsIjoiaHR0cDovL2FwaS5tcWNkbi5jb20vcmVzL21xbG9nby5naWYiLCJpbWFnZUFsdFRleHQiOiLCqSAyMDIzIE1hcFF1ZXN0LCBJbmMuIn0sIm1lc3NhZ2VzIjpbXX0sIm9wdGlvbnMiOnsibWF4UmVzdWx0cyI6LTEsImlnbm9yZUxhdExuZ0lucHV0IjpmYWxzZX0sInJlc3VsdHMiOlt7InByb3ZpZGVkTG9jYXRpb24iOnsibG9jYXRpb24iOiJMb25kb24sIFVLIn0sImxvY2F0aW9ucyI6W3sic3RyZWV0IjoiIiwiYWRtaW5BcmVhNiI6IiIsImFkbWluQXJlYTZUeXBlIjoiTmVpZ2hib3Job29kIiwiYWRtaW5BcmVhNSI6IkxvbmRvbiIsImFkbWluQXJlYTVUeXBlIjoiQ2l0eSIsImFkbWluQXJlYTQiOiJMb25kb24iLCJhZG1pbkFyZWE0VHlwZSI6IkNvdW50eSIsImFkbWluQXJlYTMiOiJFTkciLCJhZG1pbkFyZWEzVHlwZSI6IlN0YXRlIiwiYWRtaW5BcmVhMSI6IkdCIiwiYWRtaW5BcmVhMVR5cGUiOiJDb3VudHJ5IiwicG9zdGFsQ29kZSI6IiIsImdlb2NvZGVRdWFsaXR5Q29kZSI6IkE1WEFYIiwiZ2VvY29kZVF1YWxpdHkiOiJDSVRZIiwiZHJhZ1BvaW50IjpmYWxzZSwic2lkZU9mU3RyZWV0IjoiTiIsImxpbmtJZCI6IjAiLCJ1bmtub3duSW5wdXQiOiIiLCJ0eXBlIjoicyIsImxhdExuZyI6eyJsYXQiOjUxLjUwNjQzLCJsbmciOi0wLjEyNzE5fSwiZGlzcGxheUxhdExuZyI6eyJsYXQiOjUxLjUwNjQzLCJsbmciOi0wLjEyNzE5fSwibWFwVXJsIjoiIn1dfV19
+  recorded_at: Wed, 27 Sep 2023 04:03:57 GMT
+- request:
+    method: get
+    uri: http://api.weatherapi.com/v1/forecast.json?hour=23&q=51.50643%20-0.12719
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Key:
+      - 84970864259a482888e195152232309
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 27 Sep 2023 04:03:57 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Server:
+      - BunnyCDN-IL1-871
+      Cdn-Pullzone:
+      - '93447'
+      Cdn-Uid:
+      - 8fa3a04a-75d9-4707-8056-b7b33c8ac7fe
+      Cdn-Requestcountrycode:
+      - US
+      Age:
+      - '0'
+      Cache-Control:
+      - public, max-age=180
+      Via:
+      - 1.1 varnish (Varnish/6.0)
+      X-Varnish:
+      - '573768993'
+      Cdn-Proxyver:
+      - '1.04'
+      Cdn-Requestpullsuccess:
+      - 'True'
+      Cdn-Requestpullcode:
+      - '200'
+      Cdn-Cachedat:
+      - '09/27/2023 04:03:57'
+      Cdn-Edgestorageid:
+      - '1029'
+      Cdn-Status:
+      - '200'
+      Cdn-Requestid:
+      - 62fd41aa5fa352af02dacee0076cb71f
+      Cdn-Cache:
+      - MISS
+    body:
+      encoding: ASCII-8BIT
+      string: '{"location":{"name":"London","region":"City of London, Greater London","country":"United
+        Kingdom","lat":51.51,"lon":-0.13,"tz_id":"Europe/London","localtime_epoch":1695787435,"localtime":"2023-09-27
+        5:03"},"current":{"last_updated_epoch":1695787200,"last_updated":"2023-09-27
+        05:00","temp_c":14.0,"temp_f":57.2,"is_day":0,"condition":{"text":"Overcast","icon":"//cdn.weatherapi.com/weather/64x64/night/122.png","code":1009},"wind_mph":3.8,"wind_kph":6.1,"wind_degree":120,"wind_dir":"ESE","pressure_mb":1017.0,"pressure_in":30.03,"precip_mm":0.0,"precip_in":0.0,"humidity":94,"cloud":100,"feelslike_c":13.7,"feelslike_f":56.7,"vis_km":10.0,"vis_miles":6.0,"uv":1.0,"gust_mph":7.3,"gust_kph":11.7},"forecast":{"forecastday":[{"date":"2023-09-27","date_epoch":1695772800,"day":{"maxtemp_c":18.8,"maxtemp_f":65.9,"mintemp_c":13.0,"mintemp_f":55.5,"avgtemp_c":15.9,"avgtemp_f":60.5,"maxwind_mph":22.1,"maxwind_kph":35.6,"totalprecip_mm":1.2,"totalprecip_in":0.05,"totalsnow_cm":0.0,"avgvis_km":9.3,"avgvis_miles":5.0,"avghumidity":80.0,"daily_will_it_rain":1,"daily_chance_of_rain":89,"daily_will_it_snow":0,"daily_chance_of_snow":0,"condition":{"text":"Patchy
+        rain possible","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png","code":1063},"uv":4.0},"astro":{"sunrise":"06:54
+        AM","sunset":"06:48 PM","moonrise":"06:27 PM","moonset":"03:39 AM","moon_phase":"Waxing
+        Gibbous","moon_illumination":"91","is_moon_up":1,"is_sun_up":0},"hour":[{"time_epoch":1695852000,"time":"2023-09-27
+        23:00","temp_c":13.0,"temp_f":55.5,"is_day":0,"condition":{"text":"Clear","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png","code":1000},"wind_mph":7.4,"wind_kph":11.9,"wind_degree":248,"wind_dir":"WSW","pressure_mb":1014.0,"pressure_in":29.93,"precip_mm":0.0,"precip_in":0.0,"humidity":78,"cloud":20,"feelslike_c":12.0,"feelslike_f":53.6,"windchill_c":12.0,"windchill_f":53.6,"heatindex_c":13.0,"heatindex_f":55.5,"dewpoint_c":9.4,"dewpoint_f":48.8,"will_it_rain":0,"chance_of_rain":0,"will_it_snow":0,"chance_of_snow":0,"vis_km":10.0,"vis_miles":6.0,"gust_mph":10.4,"gust_kph":16.7,"uv":1.0}]}]}}'
+  recorded_at: Wed, 27 Sep 2023 04:03:57 GMT
+recorded_with: VCR 6.2.0
